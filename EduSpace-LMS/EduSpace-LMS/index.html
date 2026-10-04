@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduSpace LMS | Learn Smarter, Achieve More</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="index">
+  <header class="nav">
+    <div class="container nav-in">
+      <a class="brand" href="index.html"><img src="images/logo.png" alt="" width="32" height="32"><span data-app-name>EduSpace LMS</span></a>
+      <nav id="navlinks" class="nav-links" aria-label="Menu utama">
+        <a href="#home">Home</a><a href="#courses">Courses</a><a href="#features">Features</a><a href="#about">About</a>
+        <a href="login.html">Login</a><a class="btn btn-primary" href="login.html?register=1">Register</a>
+      </nav>
+      <button class="icon-btn" data-action="theme" aria-label="Ganti tema">🌙</button>
+      <button class="icon-btn menu-btn" data-action="navtoggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container hero-in">
+      <div>
+        <span class="badge">🎓 Digital Learning Platform</span>
+        <h1>Learn Smarter, Achieve More</h1>
+        <p class="lead">Platform pembelajaran digital yang membantu mahasiswa mengakses materi, mengerjakan tugas, memantau progress, dan berinteraksi dalam satu tempat.</p>
+        <div class="actions"><a class="btn btn-primary" href="login.html">Get Started</a><a class="btn btn-ghost" href="#courses">Explore Courses</a></div>
+      </div>
+      <div class="mock" aria-hidden="true">
+        <div class="mock-bar"><i></i><i></i><i></i></div>
+        <div class="mock-stats"><b>6<small>Courses</small></b><b>12<small>Tasks</small></b><b>72%<small>Progress</small></b></div>
+        <div class="mock-row"><span>📊 Big Data</span><div class="progress"><span style="width:75%"></span></div></div>
+        <div class="mock-row"><span>🌐 Pemrograman Web</span><div class="progress"><span style="width:60%"></span></div></div>
+        <div class="mock-row"><span>🤖 Kecerdasan Buatan</span><div class="progress"><span style="width:40%"></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="courses" class="section"><div class="container">
+    <h2>Course Preview</h2><p class="muted">Contoh mata kuliah yang tersedia di EduSpace LMS.</p>
+    <div id="preview" class="grid"></div>
+  </div></section>
+
+  <section id="features" class="section alt"><div class="container">
+    <h2>Features</h2><p class="muted">Semua yang dibutuhkan untuk belajar daring.</p>
+    <div class="grid feat">
+      <article class="card"><span class="ico">💻</span><h3>Online Course</h3><p class="muted">Akses seluruh mata kuliah kapan saja.</p></article>
+      <article class="card"><span class="ico">📖</span><h3>Learning Materials</h3><p class="muted">Materi tiap pertemuan tersusun rapi.</p></article>
+      <article class="card"><span class="ico">📝</span><h3>Assignment</h3><p class="muted">Kumpulkan tugas dan lihat nilai.</p></article>
+      <article class="card"><span class="ico">📈</span><h3>Progress Tracking</h3><p class="muted">Pantau kemajuan belajar tiap course.</p></article>
+      <article class="card"><span class="ico">📅</span><h3>Schedule</h3><p class="muted">Jadwal kuliah mingguan yang jelas.</p></article>
+      <article class="card"><span class="ico">🔔</span><h3>Notification</h3><p class="muted">Info tugas, nilai, dan materi baru.</p></article>
+    </div>
+  </div></section>
+
+  <section id="about" class="section"><div class="container narrow">
+    <h2>About LMS</h2>
+    <p class="muted"><span data-app-name>EduSpace LMS</span> adalah platform pembelajaran digital yang membantu proses belajar mengajar antara mahasiswa dan dosen, mulai dari distribusi materi, penugasan, penilaian, hingga pemantauan progress dalam satu sistem terpadu.</p>
+  </div></section>
+
+  <footer class="footer"><div class="container foot">
+    <div><a class="brand" href="index.html"><img src="images/logo.png" alt="" width="28" height="28"><span data-app-name>EduSpace LMS</span></a><p class="muted">Platform pembelajaran digital untuk mahasiswa dan dosen.</p></div>
+    <div><h4>Quick Links</h4><a href="login.html">Login</a><a href="#courses">Courses</a><a href="#features">Features</a></div>
+    <div><h4>Contact</h4><p class="muted">support@eduspace.com<br>Jakarta, Indonesia</p></div>
+  </div><p class="copy">© 2026 EduSpace LMS. All rights reserved.</p></footer>
+  <div id="toasts" class="toasts"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>

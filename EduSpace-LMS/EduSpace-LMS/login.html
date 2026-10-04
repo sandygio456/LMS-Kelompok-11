@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | EduSpace LMS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+  <div class="login">
+    <section class="login-brand">
+      <a class="brand" href="index.html"><img src="images/logo.png" alt="" width="36" height="36"><span data-app-name>EduSpace LMS</span></a>
+      <h1>Learn Smarter,<br>Achieve More</h1>
+      <p>Masuk untuk melanjutkan materi, tugas, dan jadwal kuliahmu.</p>
+      <div class="mock-stats"><b>6<small>Courses</small></b><b>12<small>Tasks</small></b><b>72%<small>Progress</small></b></div>
+    </section>
+    <section class="login-form">
+      <button class="icon-btn theme-corner" data-action="theme" aria-label="Ganti tema">🌙</button>
+      <form id="loginForm" novalidate>
+        <h2>Welcome Back 👋</h2>
+        <p class="muted">Login ke akun EduSpace kamu.</p>
+        <div id="formError" class="alert" hidden></div>
+        <label for="email">Email / Username</label>
+        <input id="email" type="text" placeholder="student@eduspace.com" autocomplete="username">
+        <small class="err" id="emailErr"></small>
+        <label for="password">Password</label>
+        <div class="pw"><input id="password" type="password" placeholder="••••••" autocomplete="current-password"><button type="button" class="icon-btn" data-action="showpw" aria-label="Tampilkan password">👁</button></div>
+        <small class="err" id="pwErr"></small>
+        <div class="row"><label class="check"><input id="remember" type="checkbox"> Remember Me</label><a href="#" data-action="forgot">Forgot Password?</a></div>
+        <button id="loginBtn" class="btn btn-primary block" type="submit">Login</button>
+        <p class="muted center">Belum punya akun? <a href="#" data-action="register">Register</a></p>
+        <p class="hint">Demo: student@eduspace.com / 123456</p>
+      </form>
+    </section>
+  </div>
+  <div id="toasts" class="toasts"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
